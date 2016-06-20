@@ -1,0 +1,5 @@
+all:
+	arm-linux-gcc -c leds_key.c -o leds_key.o
+	arm-linux-gcc -c leds_key.s -o leds_key_start.o
+	arm-linux-ld leds_key_start.o leds_key.o -Ttext 0 -o leds_key_start.elf
+	arm-linux-objcopy leds_key_start.elf -O binary leds_key_start.bin

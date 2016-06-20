@@ -1,0 +1,5 @@
+all:
+	arm-linux-gcc -c leds.c -o leds_main.o
+	arm-linux-gcc -c leds.s -o leds_start.o
+	arm-linux-ld leds_start.o leds_main.o -Ttext 0 -o leds.elf
+	arm-linux-objcopy leds.elf -O binary leds.bin

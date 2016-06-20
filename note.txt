@@ -1,0 +1,1 @@
+1,norflah启动的时候，0地址是指向norflash的，并且norflash是类似内存的接口，因此直接可以在上面跑代码，但是不能像内存一样去写norflash
