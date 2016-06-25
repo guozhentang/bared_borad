@@ -11,4 +11,4 @@ leds:
 	arm-linux-ld leds_start.o leds_main.o -Ttext 0 -o leds.elf
 	arm-linux-objcopy leds.elf -O binary leds.bin
 clean:
-	rm -rf *.o *.elf *.bin *.S
+	rm -rf *.o *.elf *.bin
