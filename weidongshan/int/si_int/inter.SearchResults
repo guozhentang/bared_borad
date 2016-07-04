@@ -1,0 +1,6 @@
+---- oft Matches (5 in 1 files) ----
+Interrupt.c:    unsigned long oft = INTOFFSET;
+Interrupt.c:    switch( oft )
+Interrupt.c:    if( oft == 5 ) 
+Interrupt.c:    SRCPND = 1<<oft;
+Interrupt.c:    INTPND = 1<<oft;
